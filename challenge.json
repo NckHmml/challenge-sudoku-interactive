@@ -1,0 +1,11 @@
+﻿{
+  "editable": [
+    "Challenge.css",
+    "Challenge.js"
+  ],
+  "excludes": [
+    ".gitignore",
+    ".gitattributes",
+    "challenge.json"
+  ]
+}

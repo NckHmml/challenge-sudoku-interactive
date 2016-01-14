@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Sudoku Challenge</title>
+    <meta charset="utf-8" />
+    <link href="Sudoku.css" type="text/css" rel="stylesheet" />
+    <link href="Challenge.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <table id="SudokuField" class="center">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="center">
+        <button onclick="sudoku.setPuzzle(1)">Puzzle 1</button>
+        <button onclick="sudoku.setPuzzle(2)">Puzzle 2</button>
+        <button onclick="sudoku.setPuzzle(3)">Puzzle 3</button>
+    </div>
+    <div class="center">
+        <button onclick="" id="btnSolve">Solve</button>
+        <button onclick="sudoku.clearPuzzle()">Clear</button>
+    </div>
+    <script src="jQuery.min.js" type="text/javascript"></script>
+    <script src="Sudoku.js" type="text/javascript"></script>
+    <script src="Challenge.js" type="text/javascript"></script>
+</body>
+</html>

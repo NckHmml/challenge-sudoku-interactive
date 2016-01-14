@@ -1,0 +1,27 @@
+﻿.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+table#SudokuField {
+  border-collapse:collapse;
+  border: 2px solid black;
+}
+
+#SudokuField td {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid darkgray;
+  width: 30px;
+  height: 30px;
+}
+
+/* Every 3rd cell <= 6th*/
+#SudokuField tr > td:nth-child(3n):nth-child(-n+6) {
+  border-right: 1px solid black;
+}
+/* Every 3rd row <= 6th */
+#SudokuField tr:nth-child(3n):nth-child(-n+6) > td {
+  border-bottom: 1px solid black;
+}
