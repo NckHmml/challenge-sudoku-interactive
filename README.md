@@ -27,6 +27,8 @@ A sudoku is made out of 81 (9x9) numbers which are within 1 square called the fi
 - Cells are counted from left to right.
 - Cells are counted horizontally, defined by ``x``
 
+When adding animations, please make sure these do not take more time than roughly 2 seconds.
+
 ## Optional
 As the solution for this challenge is relatively simple, we encourage to show off some of your skills in this challenge. For example you could add some cool animations or show more information while the puzzle is being solved.
 

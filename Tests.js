@@ -8,6 +8,7 @@ var env = require("jsdom").env,
 describe("Test", function () {
     var listener, $, window;
     before(function (done) {
+        this.timeout(5000);
         app.use(express.static("public"));
 
         listener = app.listen(0, function () {
@@ -20,14 +21,14 @@ describe("Test", function () {
                 done: function (errors, w) {
                     window = w;
                     $ = require("jquery")(window);
+                    $("#btnSolve").click();
                     done();
                 }
             });
         });
     });
 
-    it("if solves puzzle", function (done) {
-        $("#btnSolve").click();
+    it("if puzzle is solved", function (done) {
         $(window.sudoku.cells).each(function () {
             assert.notEqual("", $(this).html());
         });
