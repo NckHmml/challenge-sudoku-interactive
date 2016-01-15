@@ -1,11 +1,12 @@
 ﻿{
   "editable": [
-    "Challenge.css",
-    "Challenge.js"
+    "public/Challenge.css",
+    "public/Challenge.js"
   ],
   "excludes": [
     ".gitignore",
     ".gitattributes",
     "challenge.json"
-  ]
+  ],
+  "test": "mocha Tests.js"
 }
