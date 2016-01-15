@@ -1,4 +1,5 @@
-﻿//BEGIN_CHALLENGE
+﻿
+//BEGIN_CHALLENGE
 $("#btnSolve").on("click", function () {
     var solution = sudoku.getSolution();
     for (var x = 0; x < 9; x++)
