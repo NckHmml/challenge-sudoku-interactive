@@ -1,7 +1,8 @@
 ﻿{
   "editable": [
     "public/Challenge.css",
-    "public/Challenge.js"
+    "public/Challenge.js",
+    "public/index.html"
   ],
   "excludes": [
     ".gitignore",
