@@ -20,7 +20,7 @@ describe("Test", function () {
                 },
                 done: function (errors, w) {
                     window = w;
-                    $ = require("jquery")(window);
+                    $ = w.jQuery;
                     $("#btnSolve").click();
                     done();
                 }
