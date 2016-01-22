@@ -1,37 +1,15 @@
 ﻿"use strict";
 
 var env = require("jsdom").env,
-    assert = require("chai").assert,
-    express = require("express"),
-    app = express();
+    assert = require("chai").assert;
 
 describe("Test", function () {
-    var listener, $, window;
-    before(function (done) {
-        this.timeout(5000);
-        app.use(express.static("public"));
+    it("if puzzle is solved", function () {
+        var sudoku = global.window.sudoku,
+            $ = global.window.$;
 
-        listener = app.listen(0, function () {
-            env({
-                url: "http://127.0.0.1:" + listener.address().port + "/index.html",
-                features: {
-                    FetchExternalResources: ['script'],
-                    ProcessExternalResources: ['script']
-                },
-                done: function (errors, w) {
-                    window = w;
-                    $ = w.jQuery;
-                    $("#btnSolve").click();
-                    done();
-                }
-            });
-        });
-    });
-
-    it("if puzzle is solved", function (done) {
-        $(window.sudoku.cells).each(function () {
+        $(sudoku.cells).each(function () {
             assert.notEqual("", $(this).html());
         });
-        done();
     });
 });
