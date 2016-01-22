@@ -5,7 +5,6 @@ before(function (done) {
     jsdom.env({
         html: fs.readFileSync("./public/index.html", "utf-8"),
         resourceLoader: function (resource, callback) {
-            console.log(resource.url.pathname);
             return callback(null,
                 fs.readFileSync("./public/" + resource.url.pathname, "utf-8"));
         },
