@@ -9,5 +9,8 @@
     ".gitattributes",
     "challenge.json"
   ],
+  "tags": [
+    "JavaScript"
+  ],
   "test": "mocha tests.js setup.js"
 }
