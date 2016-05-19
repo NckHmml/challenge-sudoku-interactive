@@ -1,3 +1,0 @@
-﻿build:
-- npm install
-test: mocha tests.js setup.js
