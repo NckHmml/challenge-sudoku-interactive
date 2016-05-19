@@ -1,16 +1,24 @@
 ﻿{
-  "editable": [
-    "public/Challenge.css",
-    "public/Challenge.js",
-    "public/index.html"
-  ],
-  "excludes": [
-    ".gitignore",
-    ".gitattributes",
-    "challenge.json"
-  ],
   "tags": [
     "JavaScript"
   ],
+  "editable": [
+    "public/Challenge.css",
+    "public/Challenge.js",
+    "public/index.html",
+    ".gitignore",
+    "package.json",
+    "answer.md"
+  ],
+  "excludes": [
+    ".gitattributes",
+    "challenge.json"
+  ],
+  "main": "public/index.html",
+  "readme" : {
+    "en" : "README.md",
+    "ja" : "README_ja.md"
+  },
+  "allowNewFile": true,
   "test": "mocha tests.js setup.js"
 }
