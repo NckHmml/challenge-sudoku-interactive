@@ -1,1 +1,0 @@
-Please translate to japanese
